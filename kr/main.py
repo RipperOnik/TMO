@@ -56,7 +56,7 @@ scores = cross_val_score(KNeighborsRegressor(n_neighbors=cv_knn),
 st.subheader('Оценка качества модели метода ближайших соседей')
 st.write('Значения neg_mean_squared_error для отдельных фолдов')
 st.bar_chart(scores)
-st.write('Усредненное значение neg_mean_squared_error по всем фолдам - {}'.format(-np.mean(scores)))
+st.write('Усредненное значение neg_mean_squared_error по всем фолдаstм - {}'.format(-np.mean(scores)))
 
 st.subheader('Деревья решений')
 cv_max_depth = st.slider('Максимальная гоубина:', min_value=3, max_value=6, value=3, step=1)
